@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>RactiveJS Events</title>
+  <link rel="stylesheet" href="styles/app.css">
+</head>
+<body>
+<script id="app-template" type="text/ractive">
+  <h1 class="message-text">{{message}}</h1>
+  <div class="user-info">
+  <div>First name: {{results.user.firstName}}</div>
+  <div>Last name: {{results.user.lastName}}</div>
+  <div>E-Mail: {{results.user.email}}</div>
+  <div>Phone: {{results.user.phone}}</div>
+  <img class="user-photo" src={{results.user.photo}}>
+  </div>
+  <div class="original-json">
+  Original JSON:
+  <p class="query-results">{{results.userInfo}}</p>
+  </div>
+  //use the next line to test custom events (dont't forget to uncomment the event handling code in main.js)
+  // <input class="query-button" type="button" value="Click2" on-click2="click2-in-action">
+  <input class="query-button" type="button" value="Get UserInfo!" on-click="query-webservice">
+</script>
+
+<div id="app-main"></div>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://cdn.ractivejs.org/latest/ractive.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>
