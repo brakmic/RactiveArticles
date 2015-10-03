@@ -1,5 +1,5 @@
 # RactiveComponents
-This is the source code from my <a href="http://blog.brakmic.com/creating-components-with-ractive-js/" target="_blank">blog post on creating Ractive adaptors.</a>
+This is the source code from my <a href="http://blog.brakmic.com/implementing-ractive-js-adaptors/" target="_blank">blog post on creating Ractive adaptors.</a>
 
 **License**
 
